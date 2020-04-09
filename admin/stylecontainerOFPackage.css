@@ -68,6 +68,8 @@ animation: color 20s ease-in-out 2s infinite alternate ;
     text-align: center ;
     backface-visibility: hidden ;
     transform:rotateY(180deg);
+    display:inline-block;
+    margin:10px;
 }
 
 p
