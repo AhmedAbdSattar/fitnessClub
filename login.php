@@ -1,6 +1,7 @@
 <?php
   session_start();
   if(isset($_SESSION['permission'])){//check if there is session or not
+    $_SESSION['last_login_timestamp'] = time();//store the login time
     switch ($_SESSION['permission']) {
       case 1:
         header("Location: admin/Admin_Home_Page.php");//redirect to admin home page
@@ -61,7 +62,7 @@
     $password = sha1($_POST["pwd"]);//the password is encrypted
 
     include "config.php";//config file connect to DB
-    $sql = "SELECT permission, name FROM person WHERE username = '$userName' AND password = '$password';";//the query string
+    $sql = "SELECT permission, name, image FROM person WHERE username = '$userName' AND password = '$password';";//the query string
     $stmt = $conn->query($sql);//execute the query
     if ($stmt->num_rows == 1) {//if there is only one user of that data
       //output the data
@@ -69,6 +70,7 @@
 
         $_SESSION['permission'] = $result["permission"];//assign permission to the session
         $_SESSION['name'] = $result["name"];//assign name to the session
+        $_SESSION['image'] = constant('personeImage'). $result["image"];//assign the image path
         $_SESSION['userName'] = $_POST["email"];//assign userName to the session
         $_SESSION['last_login_timestamp'] = time();//store the login time
 

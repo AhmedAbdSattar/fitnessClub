@@ -161,25 +161,33 @@ function validatePassword() {
 			exit();
 		}
 
+		$sql = "INSERT INTO person (name, username, password, phoneNumber)
+						VALUES (?, ?, ?, ?);";
+
+		//prepare and bind
+		$stmt = $conn->prepare($sql);
+		$stmt->bind_param("ssss", $name, $userName, $password, $phone);
+
+		//set parameters
 		$name = $_POST["name"];
 		$userName = $_POST["email"];
 		$password = sha1($_POST["password"]);//the password is encrypted
 		$phone = $_POST["phone"];
-
-		$sql = "INSERT INTO person (name, username, password, permission, phoneNumber)
-						VALUES ('$name', '$userName', '$password', 3, '$phone');";
-		if ($conn->query($sql) === TRUE) {
+		if($stmt->execute()){//execute the statement
+			//set session parameters
 			$_SESSION['permission'] = 3;//assign permission to the session
 			$_SESSION['name'] = $name;//assign name to the session
 			$_SESSION['userName'] = $userName;//assign userName to the session
+			$_SESSION['image'] = constant('personeImage'). 'PERSON.png';//assign image to the session
 			$_SESSION['last_login_timestamp'] = time();//store the login time
 
-			$stmt->close();
+			$stmt->close();//close the statement
 			mysqli_close($conn);//close the connection to the db
+			//redirect to the member home page but by js because of some problems with output the data
 			echo '<script type="text/javascript">location.href = "member/member_Home_page.php";</script>';
-	    exit();
-		} else {
-		    echo "Error: " . $sql . "<br>" . $conn->error;
+		  exit();
+		}else {
+			echo "<script> alert('error with DB'); </script>";
 		}
 	}
 ?>

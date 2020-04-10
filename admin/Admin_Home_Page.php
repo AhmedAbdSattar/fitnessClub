@@ -1,19 +1,5 @@
 <?php
-  include "adminConfig.php";
-  include "../config.php";//connect to DB
-
-  $sql = "SELECT image FROM person WHERE username = '" . $_SESSION['userName'] . "';";//query for the image of the user
-  $stmt = $conn->query($sql);//execute the query
-  if ($stmt->num_rows == 1) {//if there is only one user of that data
-    //output the data
-    if($result = $stmt->fetch_assoc()) {//$result["image"] is the result of the query
-        $imageName = $result["image"];
-    }else{
-      echo "<script> alert('error with the database you won't see your iamge'); </script>";//generate error in password or userName error
-    }
-  }
-  $stmt->close();//close the statement
-  mysqli_close($conn);//close the connection to the db
+  require_once("adminConfig.php");
 ?>
 
 <!DOCTYPE html>
@@ -141,14 +127,13 @@ a
 <body>
 
   <div class = " headerDiv">
-    <img src = "<?php if(isset($imageName)){echo constant('personeImage'). $imageName;} ?>" alt="adminphoto">
+    <img src = "<?php echo $_SESSION['image']; ?>" alt="adminphoto">
     <h3><?php echo ucwords($_SESSION['name']);?><h3>
   </div>
 
-
-                                             <!-- تم وضع اللينك بنجاح-->
+         <!-- تم وضع اللينك بنجاح-->
  <div class = "buttonDiv">
-    <a href = "member_management.html"> <!-- لا تنسى حط لينك member-->
+    <a href = "member_management.php"> <!-- لا تنسى حط لينك member-->
    <button type="submit" class="Memberbutton" )>Members</button>
     </a>
       <a href = "Trainer_management.html"><!-- لا تنسى حط لينك trainer-->
