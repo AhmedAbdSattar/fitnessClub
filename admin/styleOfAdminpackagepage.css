@@ -127,10 +127,29 @@ body {
         border: 2px solid white ;
     }
     .list {
-        background-color:black;
+        background-color:#f30505;
         border-radius:0px 100px 100px 0px ;
         padding-top:20px;
     }
     .list:hover {
         background-color:#232121;
+    }
+    input:focus {
+      background-color: #E81220;
+      border-color:#FF2626;
+      box-shadow: 0px 0px 10px #BF0000 ,0px 0px 10px #7F0000,0px 0px 10px #770404;
+    }
+    .background {
+      position:absolute;
+      width:650px;
+      height:550px;
+      top:200px;
+      left:650px;
+      transition: 3s ease-in-out ;
+    }
+    .background:hover {
+      border-color:orange;
+      border:3px inset #C40522 ;
+      border-radius: 50%;
+      box-shadow:10px 10px 10px #EF0E21,10px 10px 10px #D60831,10px 10px 10px #C40522;
     }

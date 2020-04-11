@@ -21,7 +21,11 @@
     <img src = "<?php echo $_SESSION['image']; ?>" alt="adminphoto">
     <h3><?php echo ucwords($_SESSION['name']);?><h3>
   </div>
-
+  <nav>
+    <input type="submit" value="ADD" name ="add">  <!-- انكز الموقف يا عبدالله -->
+    <input type="text" placeholder="Search" name="search input">  <!-- انكز الموقف يا عبدالله -->
+  </nav>
+  
 <?php
   include "../config.php";//config file connect to DB
   $sql = "SELECT name, username, phoneNumber, image FROM person WHERE permission = 3;";//the query string

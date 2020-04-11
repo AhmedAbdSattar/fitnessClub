@@ -30,23 +30,36 @@
  <fieldset>
         <legend> Shifting time </legend>
             <form class ="trainerForm" id = trainer>
-
+                    <label  for = "day time"> Day:</label>
+                    <input class="shift" type="text"  placeholder="the day of training">
+                    
+                    <!--
                     <label  for = "start time"> START TIME :</label>
-                    <input class = "shift" type ="time" value =10:00 Am name = "start time"> <!--value should bring it from db by #php -->
+                    <input class = "shift" type ="time" value =10:00 Am name = "start time"> 
                     <label  for = "End time"> END TIME :</label>
-                    <input class = "shift" type ="time" value =12:00 Am name = "end time"> <!--value should bring it from db by #php -->
-
+                    <input class = "shift" type ="time" value =12:00 Am name = "end time"> 
+                    -->
 
 
                     <!--حاسب الليست اععععععععععععععععععععععععع-->
 
                     <label for="cars">Choose shifts:</label>
-                  <!-- in fact I cant make this list please help me :(-->
-                    <select >
-                         <option value="0">#shift number :</option> X
-                    </select>
+
+    <multi-input class="list">
+      <input list="speakers" placeholder="select shift num" >
+      <datalist id="speakers">
+        <option value="0" ></option>
+        <option value="1" ></option>
+        <option value="2" ></option>
+        <option value="3" ></option>
+        <option value="4" ></option> <!-- list the shifts you need-->
+        <option value="5" ></option>
+        <option value="6" ></option>
+        <option value="7" ></option>
 
 
+      </datalist>
+    </multi-input>
 
 
              </form>
@@ -70,5 +83,9 @@
                     </div>
 
 
+<img class ="background" src="///F:/program%20files/xampp/htdocs/projects/fitnessClub/photos/Gym-GIF.GIF">
+
+
 </body>
+  <script src="multi-input.js"></script>
 </html>

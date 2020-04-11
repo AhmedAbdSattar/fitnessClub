@@ -119,3 +119,7 @@ img:hover
    transform: scale(1.2,1.3);
    border-radius: 50% 50% ;
 }
+input { 
+background-color:black ;
+}
+

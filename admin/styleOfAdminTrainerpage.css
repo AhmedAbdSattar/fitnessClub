@@ -39,6 +39,12 @@ body {
     left:15% ;
     animation: fill 5s ease-in-out infinite .3s alternate ;
 }
+.header:hover{
+     border-color: #FF058A;
+     box-shadow: 0px 0px  10px #861139,
+                0px 0px  40px #79052c,
+                0px 0px  80px #3e0418;
+}
 @keyframes fill {
     0% {
         transform: skew(0deg);
@@ -138,4 +144,36 @@ body {
         background-color:green;
          border: 2px solid white ;
          outline:10px solid #ef64cd;
+    }
+    .list {
+     background-color:#680B59;
+     border-radius:0px 100px 100px 0px;
+     border: 2px solid black ;
+    }
+        .list:hover {
+        background-color:#232121;
+    }
+     .background {
+     position:absolute;
+     top:500px;
+     left: 630px;
+     width:700px;
+     transition: 2s ease-in-out ;
+     height:650px;
+     z-index:1;
+    }
+    .background:hover {
+     border-color: #FF058A;
+     border: 10px inset #E91E63;
+     border-radius: 50% ;
+         box-shadow: 0px 0px  10px #861139,
+                0px 0px  40px #79052c,
+                0px 0px  80px #3e0418;
+    }
+    input:focus{
+    border-color: #FF058A;
+    background: #E91E63;
+    box-shadow: 0px 0px  10px #861139,
+                0px 0px  40px #79052c,
+                0px 0px  80px #3e0418;
     }
