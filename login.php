@@ -69,7 +69,7 @@
       if($result = $stmt->fetch_assoc()) {//$result["permission"] is the result of the query
 
         $_SESSION['permission'] = $result["permission"];//assign permission to the session
-        $_SESSION['name'] = $result["name"];//assign name to the session
+        $_SESSION['name'] = ucwords($result["name"]);//assign name to the session
         $_SESSION['image'] = constant('personeImage'). $result["image"];//assign the image path
         $_SESSION['userName'] = $_POST["email"];//assign userName to the session
         $_SESSION['last_login_timestamp'] = time();//store the login time

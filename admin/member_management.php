@@ -4,67 +4,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Members Management </title>
-
-</head>
-<link rel="stylesheet" href="stylecontainerOFMember.css">
-
+  <title> Members Management </title>
+  <link rel="stylesheet" href="stylecontainerOFMember.css">
+  </head>
 <body>
 
-  <div class = " headerDiv">
-        <a href= "Admin_Home_Page.php">
-    <div class ="Home">
-        HOME
-    </div>
+  <?php
+    include_once 'mangementHeader.php';
 
-    </a>
-    <img src = "<?php echo $_SESSION['image']; ?>" alt="adminphoto">
-    <h3><?php echo ucwords($_SESSION['name']);?><h3>
-  </div>
-  <nav>
-    <input type="submit" value="ADD" name ="add">  <!-- انكز الموقف يا عبدالله -->
-    <input type="text" placeholder="Search" name="search input">  <!-- انكز الموقف يا عبدالله -->
-  </nav>
-  
-<?php
-  include "../config.php";//config file connect to DB
-  $sql = "SELECT name, username, phoneNumber, image FROM person WHERE permission = 3;";//the query string
-  $stmt = $conn->query($sql);//execute the query
-  if ($stmt->num_rows >= 1) {//if there is a user of that data
-    //output the data
-    while($result = $stmt->fetch_assoc()) {//$result["something"] is the result of the query
-      //variables to get the result
-      $memberName = ucwords($result['name']);
-      $memberUserName = $result['username'];
-      $memberPhone = $result['phoneNumber'];
-      $memberImage = constant("personeImage").$result['image'];
+    include "../config.php";//config file connect to DB
 
-      //show member card
-      echo "<div class = ' container'>
-             <a href = 'https://www.facebook.com'>
-             <!--VIP: here we should put link of member page which admin add and delete from it-->
+    //the query string
+    $sql = "SELECT name, username, image, MIN(day), startTime, endTime
+      FROM person, memberbill, billpackage, packageshift, shiftwork
+      WHERE permission = 3 AND person.username = memberbill.member AND billpackage.bill_ID = memberbill.bill_ID
+      AND packageshift.packageName = billpackage.packageName AND shiftwork.shiftNum = packageshift.shiftNum
+      GROUP BY person.username
+      HAVING MAX(memberbill.bill_ID)
+      ORDER BY person.username ASC;";
 
-          <div class ='front'>
-              <img src = '$memberImage' alt=' memberPhoto'>  <!-- اختار الصورة ن فضلك-->
-              <h2>$memberUserName</h2>
+    $stmt = $conn->query($sql);//execute the query
 
-          </div>
-
-          <div class ='back'>
-             <header>$memberName</header> <!--#need Email of user please -->
-             <h3 > date of training</h3>
-               <time>10:00 Am </time>  <time> 12:00 Am</time><!--#End like 3Am  -->
-
-          </div>
-             </a>
-      </div>
-          ";
+    if ($stmt->num_rows > 0) {//if there is a user
+      //output the data
+      while($result = $stmt->fetch_assoc()) {//$result["something"] is the result of the query
+        $memberImage = constant('personeImage'). $result["image"];
+        $memberUserName = $result['username'];
+        $memberName = ucwords($result["name"]);
+        $memberDay = $today[$result['MIN(day)']];
+        $startTime  = date('g:i A' ,strtotime($result['startTime']));
+        $endTime = date('g:i A' ,strtotime($result['endTime']));
+        include 'memeberCard.php';//print member data
     }
-  }
 
-  $stmt->close();//close the statement
-  mysqli_close($conn);//close the connection to the db
-?>
+    $stmt->close();//close the statement
+    mysqli_close($conn);//close the connection to the db
+  }
+  ?>
 
 </body>
 
