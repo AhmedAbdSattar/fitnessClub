@@ -10,12 +10,22 @@
 <link rel="stylesheet" href="stylecontainerOFPackage.css">
 
 <body>
-
   <?php
     include_once 'mangementHeader.php';
 
     include "../config.php";//config file connect to DB
-    $sql = "SELECT packageName, discount, shiftCost FROM package;";//the query string
+
+    //the query string
+    $sql;
+    if(isset($_GET['search'])){
+      $searchKey = $_GET['search'];
+      $sql = "SELECT packageName, discount, shiftCost FROM package
+        WHERE packageName LIKE '%$searchKey%' OR discount LIKE '%$searchKey%' OR shiftCost LIKE '%$searchKey%';";
+      echo "<script>document.getElementById('search').value = '$searchKey';</script>";
+    }else{
+      $sql = "SELECT packageName, discount, shiftCost FROM package;";
+    }
+
     $stmt = $conn->query($sql);//execute the query
     if ($stmt->num_rows >= 1) {//if there is a user of that data
       //output the data

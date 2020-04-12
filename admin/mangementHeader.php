@@ -6,10 +6,12 @@
   </div>
 
   </a>
-  <img src = "<?php echo $_SESSION['image']; ?>" alt="adminphoto">
+  <img src = "<?php echo $_SESSION['image'];?>" alt="adminphoto">
   <h3><?php echo $_SESSION['name'];?></h3> <!--#need Email of trainer please -->
 </div>
 <nav>
-  <input type="submit" value="ADD" name ="add">  <!-- انكز الموقف يا عبدالله -->
-  <input type="text" placeholder="Search" name="search input">  <!-- انكز الموقف يا عبدالله -->
+  <form action ='<?php echo $_SERVER["PHP_SELF"];?>' method="get">
+    <input type="submit" value="ADD" name ="add">  <!-- انكز الموقف يا عبدالله -->
+    <input type="text" placeholder="Search" name="search" id = "search">  <!-- انكز الموقف يا عبدالله -->
+  </form>
 </nav>
