@@ -1,0 +1,37 @@
+*{
+  -webkit-box-sizing:border-box ;
+  -moz-box-sizing:border-box ;
+  -o-box-sizing:border-box ;
+  box-sizing:border-box ;
+  overflow-x:hidden;
+  font-family:Snell Roundhand, cursive	;
+}
+.p1{
+    direction:ltr;
+    animation:9s move alternate infinite ease-in-out ;
+    word-spacing:5px;
+    letter-spacing: -3px;
+}
+
+.p2{
+    direction:rtl;
+    animation:9s reverse_move alternate infinite ease-in-out ;
+    font-family: 'Reem Kufi', sans-serif;
+
+}
+div{
+    background-color:#FF00C3 ;
+    padding:5px ;
+    border:2px solid black ;
+    font-size:30px;
+    color:white ;
+    text-shadow:0px 0px 5px red ,0px 0px 5px #CE0808 ,0px 0px 5px #F46666 ;
+    
+}
+@keyframes move {
+    0%{transform:translateX(0px);}
+    100% {transform:translateX(600px);color:#110F0F ;}}
+@keyframes reverse_move {
+    0%{transform:translateX(0px)}
+    100% {transform:translateX(-900px);color:#050505 ;}
+}
