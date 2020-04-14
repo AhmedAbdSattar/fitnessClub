@@ -20,11 +20,7 @@
       <input name="username" id = 'username' placeholder="Member Email" required type="email">
       <input name="memberphone" id = 'memberPhone' placeholder="Member Phone" required type="tel"> <!-- adimn can`t modification-->
       <input name="password" id = 'password' placeholder="Member Password" required type="password">
-    </form>
-  </fieldset>
-  <fieldset>
-    <legend>Training time</legend>
-    <form class="memberForm" id="member" name="member">
+
       <!--
 
                     <label  for = "start time"> START TIME :</label>
@@ -50,20 +46,25 @@
           //we didn't close the connection to DB because we will use it again
         ?>
       </select>
+      
+    <div class="container">
+        <!-- dont forget form action-->
+        <div>
+          <input form="member" name="modify" type="submit" value="Modify">
+        </div>
+        
+        <div>
+          <input form="member" id = 'deleteButton' name="Delete" type="submit" value="Delete">
+        </div>
+        
+        <div>
+          <input form="member" id = 'addButton' name="Add" type="submit" value="Add">
+        </div>
+   </div>
+        
     </form>
   </fieldset>
-  <div class="container">
-    <!-- dont forget form action-->
-    <div>
-      <input form="member" name="modify" type="submit" value="Modify">
-    </div>
-    <div>
-      <input form="member" id = 'deleteButton' name="Delete" type="submit" value="Delete">
-    </div>
-    <div>
-      <input form="member" id = 'addButton' name="Add" type="submit" value="Add">
-    </div>
-  </div>
+
   <table>
     <tr>
       <th>Day</th>
@@ -153,5 +154,8 @@
     $stmt->close();//close the statement
     mysqli_close($conn);//close the connection to the db
   ?>
+  
+  <img class ="background" src="///F:/program%20files/xampp/htdocs/projects/fitnessClub/photos/Gym-GIF.GIF">
+  
 </body>
 </html>

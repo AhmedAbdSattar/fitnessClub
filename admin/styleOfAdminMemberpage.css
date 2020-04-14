@@ -80,8 +80,8 @@ body {
     }
     
 }
-    fieldset ,.container  {
-        width:45%;
+    fieldset  {
+        width:35%;
         background-color:#c6ffb3;
         font-family:cursive , Monaco, Arial;
         border-radius:20px;
@@ -127,7 +127,6 @@ body {
     .container input
     {
         position:relative;
-        left:10px;
         width:170px;
         background-color:green;
          border: 2px solid white ;
@@ -148,7 +147,7 @@ body {
     }
     tr,th,td {
      font-size:20px;
-     padding:10px;
+     padding:5px;
      background-color:#06886a;
      text-align:center;
      color:white;
@@ -161,13 +160,20 @@ body {
     
     table input {
         position:relative;
-        width:50px;
-        height:50px;
+        width:35px;
+        height:15px;
         left:28%;
     }
-    input:focus , .container input:focus{
+    input:focus , .container input:focus {
             border-color: #40F902;
             background-color: green;
+            box-shadow: 0px 0px  10px #1F6D03,
+            0px 0px  40px #174F03,
+            0px 0px  80px #0F3801;
+    }
+    .header:hover {
+            border-color: #40F902;
+            border: 2px solid green ;
             box-shadow: 0px 0px  10px #1F6D03,
             0px 0px  40px #174F03,
             0px 0px  80px #0F3801;

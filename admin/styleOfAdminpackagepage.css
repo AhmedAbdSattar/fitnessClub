@@ -73,7 +73,7 @@ body {
     }
     
 }
-    fieldset ,.container  {
+    fieldset   {
         width:45%;
         background-color:#f31a0a;
         font-family:cursive , Monaco, Arial;
@@ -121,7 +121,6 @@ body {
     .container input
     {
         position:relative;
-        left:20px;
         width:170px;
         background-color:green;
         border: 2px solid white ;
@@ -145,11 +144,16 @@ body {
       height:550px;
       top:200px;
       left:650px;
-      transition: 3s ease-in-out ;
+      transition: 2s ease-in-out ;
     }
     .background:hover {
       border-color:orange;
       border:3px inset #C40522 ;
       border-radius: 50%;
+      box-shadow:10px 10px 10px #EF0E21,10px 10px 10px #D60831,10px 10px 10px #C40522;
+    }
+     .header:hover {
+      border-color:orange;
+      border:3px solid #C40522 ;
       box-shadow:10px 10px 10px #EF0E21,10px 10px 10px #D60831,10px 10px 10px #C40522;
     }

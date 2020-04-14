@@ -92,7 +92,7 @@ body {
     
 }
 
- fieldset ,.container {
+ fieldset  {
         width:45%;
         background-color:#ea9ce6;
         font-family:cursive , Monaco, Arial;  
@@ -139,11 +139,9 @@ body {
     .container input
     {
         position:relative;
-        left:10px;
         width:170px;
         background-color:green;
-         border: 2px solid white ;
-         outline:10px solid #ef64cd;
+        border: 2px solid white ;
     }
     .list {
      background-color:#680B59;
