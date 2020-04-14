@@ -1,0 +1,59 @@
+body {
+    background-image: url("blurred-background-rows-black-dumbbells-rack-gym_42687-402.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+  }
+#ul1,#ul2{
+    font-size: 40px;
+    list-style-type: none;
+    
+}
+#b1{
+    transition-duration: 0.7s;
+    font-size:50px;
+}
+#b1:hover{
+    color:white;
+    background-color: black;
+    border: 0px;
+    font-size: 80px;
+}
+#ul2{
+    text-align: right;
+}
+#all{
+    vertical-align: middle;
+}
+#classes{  
+    float: left;
+    margin-left: 40px;
+}
+#trainer{
+  float:right;
+  margin-right:40px;
+}
+#bill{
+  position: relative;
+
+  width: 400px;
+  margin-left: 500px;
+  margin-top:150px;
+}
+#A,#P,#C,#S,#M{
+  font-size: 40px;
+  margin:5px;
+}
+#A,#C{
+  float: right;
+}
+#S{
+  margin-left: 140px;
+}
+#C{
+  padding-left:14px;
+}
+#P{
+  padding-right: 22px;
+}
+
