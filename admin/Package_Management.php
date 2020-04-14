@@ -41,6 +41,12 @@
     $stmt->close();//close the statement
     mysqli_close($conn);//close the connection to the db
   ?>
+
+  <script>
+    document.getElementById('add').onclick = function() {
+     location.href = "AdminPackageModification.html";
+    };
+  </script>
 </body>
 
 </html>

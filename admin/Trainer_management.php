@@ -30,7 +30,8 @@
   }else {
     $sql = "SELECT name, username, image, MIN(day), startTime, endTime
       FROM person, trainershift, shiftwork
-      WHERE person.permission = 2 AND person.username = trainershift.trainerID AND trainershift.shiftNum = shiftwork.shiftNum
+      WHERE person.permission = 2 AND person.username = trainershift.trainerID
+      AND trainershift.shiftNum = shiftwork.shiftNum
       GROUP BY person.username ORDER BY person.username ASC;";
   }
 
@@ -50,5 +51,11 @@
     mysqli_close($conn);//close the connection to the db
   }
 ?>
+
+<script>
+  document.getElementById('add').onclick = function() {
+   location.href = "AdminTrainerModefication.html";
+  };
+</script>
 </body>
 </html>

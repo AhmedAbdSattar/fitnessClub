@@ -1,8 +1,7 @@
 <?php
   session_start();
   if(isset($_SESSION['permission'])){//check if there is session or not
-    $_SESSION['last_login_timestamp'] = time();//store the login time
-    switch ($_SESSION['permission']) {
+    switch ($_SESSION['permission']){
       case 1:
         header("Location: admin/Admin_Home_Page.php");//redirect to admin home page
         exit();

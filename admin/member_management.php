@@ -56,7 +56,11 @@
     mysqli_close($conn);//close the connection to the db
   }
   ?>
-
+<script>
+  document.getElementById('add').onclick = function() {
+   location.href = "AdminMemberModefication.php";
+  };
+</script>
 </body>
 
 </html>

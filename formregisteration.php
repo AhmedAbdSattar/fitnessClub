@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(isset($_SESSION['permission'])){
-		header("Location: member/member_Home_page.php");//redirect to login page
+		header("Location: login.php");//redirect to login page
     exit();
 	}
  ?>

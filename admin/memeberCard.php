@@ -1,5 +1,5 @@
 <div class = ' container'>
-       <a href = 'https://www.facebook.com'>
+       <a href = <?php echo "'AdminMemberModefication.php?username=$memberUserName'";?>>
        <!--VIP: here we should put link of member page which admin add and delete from it-->
 
     <div class ='front'>
