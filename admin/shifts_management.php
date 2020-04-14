@@ -7,7 +7,10 @@
 </head>
 <body>
 
-        <input type="text" name="filter" placeholder="Shift Number Search">
+        <input type="text" name="filter" placeholder="Shift Number Search" >
+        <input type="submit" name="ADD" value="ADD" form="shift">
+        <input type="submit" name="DELETE" value="DELETE" form="shift">
+        <input type="submit" name="UPDATE" value="UPDATE" form="shift">
         <!-- start table-->
      <table>
             <tbody>
@@ -51,7 +54,7 @@
             </tbody>
     </table>  <!-- end table-->
 
-
+  <form id="shift">
         <!--  data of shifts-->
        <input type="text" class="Shift num" placeholder="Shift Number " required>
        <input type="text" class="Day" placeholder="DAY">
@@ -60,7 +63,7 @@
        <label for="end time"> End time</label>
        <input type="time" class="end" >
        <input type="number" class="maxMember" placeholder="Maximum Number Of Member" required>
-       
+  </form>     
 
 
 </body>
