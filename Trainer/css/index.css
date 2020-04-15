@@ -24,6 +24,7 @@ body{
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index:5;
 }
 
 /* Style the links inside the navigation bar */
@@ -36,6 +37,7 @@ body{
   text-decoration: none;
   font-size: 17px;
   margin: 1px;
+
 }
 
 /* Change the color of links on hover */
