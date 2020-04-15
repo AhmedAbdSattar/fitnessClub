@@ -6,20 +6,28 @@
   overflow-x:hidden;
   font-family:Snell Roundhand, cursive	;
 }
-.p1{
+body
+{
+    background:#FF9ED8 ;
+}
+
+.p1
+{
     direction:ltr;
-    animation:9s move alternate infinite ease-in-out ;
+    animation:9s move alternate infinite linear ;
     word-spacing:5px;
     letter-spacing: -3px;
 }
 
-.p2{
+.p2
+{
     direction:rtl;
-    animation:9s reverse_move alternate infinite ease-in-out ;
+    animation:9s reverse_move alternate infinite linear ;
     font-family: 'Reem Kufi', sans-serif;
 
 }
-div{
+div
+{
     background-color:#FF00C3 ;
     padding:5px ;
     border:2px solid black ;
@@ -28,10 +36,66 @@ div{
     text-shadow:0px 0px 5px red ,0px 0px 5px #CE0808 ,0px 0px 5px #F46666 ;
     
 }
-@keyframes move {
+@keyframes move
+{
     0%{transform:translateX(0px);}
-    100% {transform:translateX(600px);color:#110F0F ;}}
-@keyframes reverse_move {
+    100% {transform:translateX(520px);color:#110F0F ;}
+}
+@keyframes reverse_move
+{
     0%{transform:translateX(0px)}
-    100% {transform:translateX(-900px);color:#050505 ;}
+    100% {transform:translateX(-720px);color:#050505 ;}
+}
+
+h2
+{
+  margin-left: 30px  ;
+  width:480px ;
+  color:#59488E;
+  background-color: #FF00C3;
+  padding:10px ;
+  border-radius:30px;
+}
+label
+{
+  margin-left: 40px  ;
+  color:#59488E;
+  font-size:20px ;
+}
+input[type="text"]
+{
+  width:300px ;
+  font-size:20px ;
+  background-color:pink ;
+  color:black ;
+  border:1px black solid ;
+  border-radius:20px ;
+}
+
+table {
+  text-align:center ;
+  border-collapse:collapse ;
+  padding:20px ;
+  margin: 20px auto ;
+  font-size:20px ;
+  color:black ;
+  border:groove 2px black;
+}
+th{
+  position:relative;
+  background-color:#FF00C3;
+   padding:20px ;
+}
+td{
+  position:relative;
+  background-color:#FFB2B2 ;
+  padding:20px;
+  border-left: 1px solid black;
+}
+
+td:hover {
+  background-color:#FF21B1 ;
+  border-color:#FF0098 ;
+  color:#59488E;
+  box-shadow:0px 0px 10px #FF42C6 ,0px 0px 10px #CE0291 ,0px 0px 10px #FF26D7 ;
 }
