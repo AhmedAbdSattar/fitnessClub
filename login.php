@@ -27,33 +27,19 @@
 </head>
 <link rel="stylesheet" href="loginstyle.css">
 <body>
+ 
 <div class = "welcomediv">
-
   <h1 >m3lsh fitness club </h1>
-  <h3>welcome dear customers <h3>
-  <div class = "sign"> <a href = "formregisteration.php"> Sign Up </a></div>
+  <h3>welcome dear customers </h3>
+   <a href = "formregisteration.php"> Sign Up </a>
 </div>
 
-</br>
 
-<img class ="welcomephoto" src ='photos/banner.jpg'  >
-</br>
 
 <form action ='<?php echo $_SERVER["PHP_SELF"];?>' method="post">
-​<div class="container">
-    <div class="form-group">
-      <label for="email">Email:</label> <br>
-      <input type="email" class="form-control" name="email" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label> <br>
-      <input type="password" class="form-control" name="pwd" placeholder="Enter password">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-</div>
+      <input type="email" class="form-control" name="email" placeholder="Enter email" autocomplete="off" >
+      <input type="password" class="form-control" name="pwd" placeholder="Enter password" autocomplete="off">
+      <button type="submit" class="btn btn-default">Submit</button>
 </form>
 <?php
   if($_SERVER['REQUEST_METHOD']=='POST'){//if the user came to this page through POST request(he click on the login button)
