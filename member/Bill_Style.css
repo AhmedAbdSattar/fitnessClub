@@ -8,7 +8,9 @@
 }
 body
 {
-    background:#FF9ED8 ;
+  background-image:url("///F:/program%20files/xampp/htdocs/projects/fitnessClub/photos/back3.jpg");
+  background-position:center ;
+  background-size:cover;
 }
 
 .p1
@@ -59,10 +61,10 @@ h2
 label
 {
   margin-left: 40px  ;
-  color:#59488E;
+  color:#D8D8D8;
   font-size:20px ;
 }
-input[type="text"]
+input[name="bill"]
 {
   width:300px ;
   font-size:20px ;
@@ -93,9 +95,55 @@ td{
   border-left: 1px solid black;
 }
 
-td:hover {
+input:hover
+{
   background-color:#FF21B1 ;
   border-color:#FF0098 ;
   color:#59488E;
   box-shadow:0px 0px 10px #FF42C6 ,0px 0px 10px #CE0291 ,0px 0px 10px #FF26D7 ;
+}
+form
+{
+  text-align:center ;
+  display: flex ;
+  flex-direction:column;
+  align-items:center ;
+  background-image:url("///F:/program%20files/xampp/htdocs/projects/fitnessClub/photos/back2.jpg");
+  background-position:center ;
+  background-size:cover;
+  margin:auto ;
+  padding:20px ;
+  border:2px solid black ;
+   border-radius:0%0% 80% 80% ;
+}
+form input ,input[type="submit"]
+{
+  width:500px;
+  font-size:30px ;
+  background-color:black;
+  color:white ;
+  margin:20px ;
+  padding:10px ;
+}
+form label
+{
+  position:relative;
+  color:white ;
+  font-size:30px ;
+  text-shadow:0px 0px 10px #FF42C6 ,0px 0px 10px #CE0291 ,0px 0px 10px #FF26D7 ;
+}
+input[type="submit"]
+{
+  background:black ;
+  width:900px ;
+  display:block;
+  margin:auto;
+  border-radius:0%0% 80% 80% ;
+  text-shadow:0px 0px 10px #FF42C6 ,0px 0px 10px #CE0291 ,0px 0px 10px #FF26D7 ;
+}
+input:focus {
+  background-color:#00E9FF ;
+  border-color:aqua ;
+  color:#FFFFFF;
+  box-shadow:0px 0px 10px #0061FF ,0px 0px 10px #1502C9 ,0px 0px 10px #00F6FF ;
 }
