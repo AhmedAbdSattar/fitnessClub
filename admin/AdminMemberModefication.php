@@ -291,6 +291,6 @@
     $stmt->close();//close the statement
     mysqli_close($conn);//close the connection to the db
   ?>
-  <img class ="background" src="../photos/Gym-GIF.GIF">
+
 </body>
 </html>

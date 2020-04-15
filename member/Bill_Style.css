@@ -8,7 +8,7 @@
 }
 body
 {
-  background-image:url("///F:/program%20files/xampp/htdocs/projects/fitnessClub/photos/back3.jpg");
+  background-image:url("../photos/back3.jpg");
   background-position:center ;
   background-size:cover;
 }
@@ -108,7 +108,7 @@ form
   display: flex ;
   flex-direction:column;
   align-items:center ;
-  background-image:url("///F:/program%20files/xampp/htdocs/projects/fitnessClub/photos/back2.jpg");
+  background-image:url("../photos/back2.jpg");
   background-position:center ;
   background-size:cover;
   margin:auto ;
