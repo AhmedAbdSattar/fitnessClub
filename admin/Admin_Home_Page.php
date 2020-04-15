@@ -31,7 +31,7 @@
     <button type = "button" class = "Packagebutton" >  Package Management </button>
       </a>
       
-      <a href = "shifts_management.php"><!-- لا تنسى حط لينك package-->
+      <a href = "shifts_Management.php"><!-- لا تنسى حط لينك package-->
     <button type = "button" class = "shiftsbutton" >  shifts Management </button>
        </a>
       
