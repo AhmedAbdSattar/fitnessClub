@@ -1,0 +1,241 @@
+body,html{
+	height: 100%;
+	font-style: italic;
+}
+body{
+	/* The image used */
+  background-image: url("5.GIF");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+
+
+/* Add a black background color to the top navigation bar */
+.header {
+  overflow: hidden;
+  background-color: gray;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+/* Style the links inside the navigation bar */
+.header a {
+  float: left;
+  display: block;
+  color: azure;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 1px;
+}
+
+/* Change the color of links on hover */
+.header a:hover {
+  background-color: black;
+  color: azure;
+}
+
+/* Style the "active" element to highlight the current page */
+.header a.Home {
+  background-color: black;
+  color: white;
+}
+.myimg{
+  opacity: 90%;
+  size: 100%;
+}
+/* Style the search box inside the navigation bar */
+.header input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 16px;
+  margin-left: 10px;
+  font-size: 17px;
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .header a, .header input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .header input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.header select{
+  float: left;
+  display: block;
+  color: azure;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 1px;
+  background-color: gray;
+  appearance:none;
+  transition: 1s;
+
+}
+
+.header select:hover{
+  background-color: black;
+  color: azure;
+  opacity: 90%;
+  }
+
+.container{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	max-width: 800px;
+	margin: auto;
+	padding: 10px;
+  overflow: hidden;
+}
+
+.txtb{
+	width: 200px;
+	height: 30px;
+	padding: 5px;
+	border: none;
+	border-bottom: 2px solid #000
+	background:none;
+	font-size: 18px;
+	background-color: lightgray;
+	margin: 5PX;
+}
+.att input{
+  padding: 10px;
+  width: 300px;
+  box-shadow: 
+}
+.List{
+	text-align-last: left;
+	background-color: azure;
+	opacity: 70%;
+	margin: 2px;
+}
+#list li {
+	border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#myUL {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#myUL li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: lightcyan;
+  font-size: 18px;
+  transition: 0.4s;
+  user-select: none;
+  opacity: 80%;
+  width: 700px;
+  text-align-last: left;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  margin: 4px;
+}
+#myUL li:hover {
+  background: cyan;
+}
+
+#myInput {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.att{
+  background-color: darkcyan;
+  padding-top: 15px;
+  color: black;
+  padding-bottom: 20px;
+  width: 500px;
+  opacity: 90%;
+  margin-bottom: 25px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px lightgray;
+
+}
+/*
+.footer{
+  background-color: black;
+  color: azure;
+  text-align: center;
+  padding-top: 8px;
+  overflow: hidden;
+  bottom: 0px;
+  margin-top: 200px;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  right: 0px;
+  overflow: hidden;
+  
+}
+.footer span{
+  float: left;
+  margin-left: 90px;
+}
+
+.footer ul li{
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+  bottom: 20px;  
+
+
+}
+*/
