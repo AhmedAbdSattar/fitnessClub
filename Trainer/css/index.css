@@ -1,3 +1,6 @@
+*{
+  font: 15px Arial, sans-serif
+}
 body,html{
 	height: 100%;
 	font-style: italic;
@@ -48,7 +51,7 @@ body{
 
 /* Style the "active" element to highlight the current page */
 .header a.Home {
-  background-color: black;
+  background-color: crimson;
   color: white;
 }
 .myimg{
@@ -61,12 +64,11 @@ body{
   padding: 6px;
   border: none;
   margin-top: 10px;
-  margin-right: 16px;
+  margin-right: 27px;
   margin-left: 10px;
   font-size: 17px;
-  padding-left: 20px;
-  margin-left: 20px;
-  margin-right: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
 }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
@@ -104,7 +106,7 @@ body{
   opacity: 90%;
   }
 
-.container{
+/*.container{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -112,9 +114,9 @@ body{
 	margin: auto;
 	padding: 10px;
   overflow: hidden;
-}
+}*/
 
-.txtb{
+/*.txtb{
 	width: 200px;
 	height: 30px;
 	padding: 5px;
@@ -124,11 +126,31 @@ body{
 	font-size: 18px;
 	background-color: lightgray;
 	margin: 5PX;
+}*/
+.att{
+  background-color: darkcyan;
+  padding-top: 15px;
+  color: black;
+  padding-bottom: 15px;
+  width: 500px;
+  opacity: 90%;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 3%;
+  border:solid .5px darkseagreen;
+  z-index: 25;
+  
+
 }
+
 .att input{
   padding: 10px;
   width: 300px;
-  box-shadow: 
+}
+.att h1{
+  font-size: 30px;
+  color: azure;
 }
 .List{
 	text-align-last: left;
@@ -144,7 +166,8 @@ body{
   text-decoration: none; /* Remove default text underline */
   font-size: 18px; /* Increase the font-size */
   color: black; /* Add a black text color */
-  display: block; 
+  display: block;
+  overflow: hidden;
 }
 
 * {
@@ -171,9 +194,12 @@ body{
   -moz-user-select:none;
   -ms-user-select:none;
   margin: 4px;
+  border-radius: 4%;
 }
 #myUL li:hover {
   background: cyan;
+  border-radius: 15%;
+  transition: 0.5s;
 }
 
 #myInput {
@@ -199,18 +225,7 @@ body{
   transition: 0.3s;
   border-radius: 0;
 }
-.att{
-  background-color: darkcyan;
-  padding-top: 15px;
-  color: black;
-  padding-bottom: 20px;
-  width: 500px;
-  opacity: 90%;
-  margin-bottom: 25px;
-  overflow: hidden;
-  box-shadow: 5px 5px 5px lightgray;
 
-}
 /*
 .footer{
   background-color: black;
