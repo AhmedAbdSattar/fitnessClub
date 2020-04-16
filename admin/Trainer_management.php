@@ -54,7 +54,7 @@
 
 <script>
   document.getElementById('add').onclick = function() {
-   location.href = "AdminTrainerModefication.html";
+   location.href = "AdminTrainerModefication.php";
   };
 </script>
 </body>

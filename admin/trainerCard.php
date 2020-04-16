@@ -1,5 +1,5 @@
 <div class = " container">
-      <a href = "https://www.facebook.com"> <!-- VIP: here we should put link of trainer page which admin add and delete from it -->
+      <a href = <?php echo "'AdminTrainerModefication.php?username=$trainerUserName'";?>> <!-- VIP: here we should put link of trainer page which admin add and delete from it -->
 
     <div class ="front">
         <img src = "<?php echo $trainerImage;?>" alt=" trainerPhoto">  <!-- اختار الصورة ن فضلك-->
