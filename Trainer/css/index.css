@@ -1,5 +1,5 @@
 *{
-  font: 15px Arial, sans-serif
+  font-family: Comic Sans MS;
 }
 body,html{
 	height: 100%;
@@ -28,6 +28,7 @@ body{
   top: 0px;
   left: 0px;
   z-index:5;
+  height: 50px;
 }
 
 /* Style the links inside the navigation bar */
@@ -36,10 +37,12 @@ body{
   display: block;
   color: azure;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 14px;
   text-decoration: none;
   font-size: 17px;
   margin: 1px;
+  height: 100%;
+  padding-top: 10px;
 
 }
 
@@ -61,14 +64,20 @@ body{
 /* Style the search box inside the navigation bar */
 .header input[type=text] {
   float: right;
-  padding: 6px;
+  padding: 4px;
   border: none;
   margin-top: 10px;
-  margin-right: 27px;
-  margin-left: 10px;
+  padding-right: 15px;
+  margin-right: 10px;
+  margin-left: 0px;
   font-size: 17px;
-  padding-left: 10px;
+  padding-left: 0 px;
   border-radius: 5px;
+  background-color:#d9d9d9 ;
+
+}
+.header input[type=text]:hover{
+  background-color: azure;
 }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
@@ -90,10 +99,10 @@ body{
   display: block;
   color: azure;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 14px;
   text-decoration: none;
   font-size: 17px;
-  margin: 1px;
+  margin: 0px;
   background-color: gray;
   appearance:none;
   transition: 1s;
