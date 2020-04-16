@@ -40,7 +40,7 @@ body{
 }
 .button:hover{
 	background-color: crimson;
-	transition: 0.4s;
+	transition: 0.7s;
 	width: 300px;
 }
 
@@ -51,7 +51,7 @@ body{
 }
 .button1:hover{
 	background-color: crimson;
-	transition: 0.5s;
+	transition: 0.7s;
 	width: 405px;
 	height: 66px;
 }
