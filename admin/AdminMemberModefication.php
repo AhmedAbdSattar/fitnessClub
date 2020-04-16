@@ -15,11 +15,11 @@
   </div>
   <fieldset>
     <legend>Informations</legend>
-    <form class="memberForm" method="get">
-      <input name="membername" id = 'membername' placeholder="Member Name" required type="text"> <!-- adimn can`t modification-->
-      <input name="username" id = 'username' placeholder="Member Email" required type="email">
-      <input name="memberphone" id = 'memberPhone' placeholder="Member Phone" required type="tel" maxlength="11"> <!-- adimn can`t modification-->
-      <input name="password" id = 'password' placeholder="Member Password" required type="password">
+    <form class="memberForm" method="get" >
+      <input name="membername" id = 'membername' placeholder="Member Name" required type="text" autocomplete="off"/> <!-- adimn can`t modification-->
+      <input name="username" id = 'username' placeholder="Member Email" required type="email" autocomplete="off"/>
+      <input name="memberphone" id = 'memberPhone' placeholder="Member Phone" required type="tel" maxlength="11" autocomplete="off"/> <!-- adimn can`t modification-->
+      <input name="password" id = 'password' placeholder="Member Password" required type="password" autocomplete="off"/>
       <select id = 'packageList' name = 'package'>
         <?php
           include "../config.php";//config file connect to DB
