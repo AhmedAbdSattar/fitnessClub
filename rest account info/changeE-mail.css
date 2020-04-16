@@ -1,0 +1,57 @@
+body{
+	height: 100%;
+	text-align:center;
+	background-color: steelblue;
+	background-size: 100%;
+
+}
+.myForm{
+	background-color: dodgerblue;
+	width: 500px;
+	margin-top: 30px;
+	overflow: hidden;
+	box-shadow: 0px 0px 3px 4px darkslategray;
+	font-style:normal;
+	text-decoration: underline firebrick;
+	text-decoration-style: solid;
+	 font: 15px Arial, sans-serif;
+	 border-radius: 5%;
+
+
+}
+.myForm input{
+	padding: 10px;
+	margin:10px;
+	width: 400px;
+	box-sizing: border-box;
+	border-radius: 15%;
+	border: 2px solid #ccc;
+	
+}
+.myForm label{
+	color: ivory;
+}
+.myForm h1{
+	color: ivory;
+}
+.button{
+	background-color: darkslateblue;
+	color: azure;
+}
+.button:hover{
+	background-color: crimson;
+	transition: 0.4s;
+	width: 300px;
+}
+
+.button1{
+	background-color: darkslateblue;
+	color: azure;
+	height: 60px;
+}
+.button1:hover{
+	background-color: crimson;
+	transition: 0.5s;
+	width: 405px;
+	height: 63px;
+}
