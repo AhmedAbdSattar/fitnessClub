@@ -25,7 +25,7 @@
 <head>
 <title>Gym Page</title>
 </head>
-<link rel="stylesheet" href="loginstyle.css">
+<link rel="stylesheet" href="loginPageStyle.css">
 <body>
  
 <div class = "welcomediv">

@@ -1,5 +1,9 @@
 *{
-  font-family: Luminari, fantasy	, cursive	;
+    font-family: Luminari, fantasy, cursive	;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
 }
 body
 {
@@ -48,9 +52,10 @@ input,button
 }
 button {
    width: 200px;
-   height: 50px;
    margin-top: 40px ;
    border-color:#B5D385;
+   animation:9s  lightness linear infinite  alternate;
+
 }
 input[name="email"]
 {
@@ -62,14 +67,12 @@ a
    background-color:black;
    left: 520px;
    width:300px ;
-   height: 60px ;
    border:2px groove #CCC;
    color:white ;
    font-size: 30px;
    text-decoration:none;
    padding:10px;
    border-radius:30px ;
-   line-height:50px;
    top:240px;
 }
 a:focus,input:focus,button:focus
@@ -80,4 +83,23 @@ a:focus,input:focus,button:focus
    box-shadow:0px 0px 10px #079FBA ,0px 0px 10px #00ADAD ,0px 0px 10px #5BFFFF,0px 0px 10px #0A8691 ,0px 0px 10px #04167C ,0px 0px 10px #0024F2 ;
    transform: scale(1.5,1.3);
 }
-
+h1,h3
+{
+  animation:9s  lightness linear infinite  alternate;
+}
+@keyframes lightness
+{
+  0%{
+    text-shadow:0px 0px 10px #3E00F9 ,0px 0px 10px #00FFFF ,0px 0px 10px #2ACCCC,0px 0px 10px #54B8BF;
+  }
+  25%{
+    text-shadow:0px 0px 10px #E4FF19 ,0px 0px 10px #CCFF00 ,0px 0px 10px #83A509,0px 0px 10px #D9FC80;
+  }
+  50% {
+    text-shadow:0px 0px 10px #00FF50 ,0px 0px 10px #0FFF43 ,0px 0px 10px #2BAA27,0px 0px 10px #0D7A1D;
+  }
+  100% {
+    
+     text-shadow:0px 0px 10px #FF51B6 ,0px 0px 10px #FF00FF ,0px 0px 10px #FF0547,0px 0px 10px #D1102D;
+  }
+}

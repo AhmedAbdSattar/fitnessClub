@@ -6,6 +6,11 @@
   body
 {
 background-color:black;
+background-image:url("../photos/zero.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+ opacity:0.8;
 }
 
 .headerDiv
@@ -15,12 +20,16 @@ background-color:black;
   width:100%;
   padding :10px ;
   text-align :center ;
-  border:2px solid aqua ;
-  font-size:30px;
+  border:5px groove #B5B5AA ;
   color:white;
   text-shadow: 2px 5px 15px #FFDD02, 2px 5px 15px #D6FC00, 2px 5px 15px #E9FF00;
   font-family:Arial , tahoma;
-
+  box-shadow:0px 0px 15px #F7F7F7,0px 0px 15px #BDBFB9,0px 0px 15px #6D6D6D ;
+  opacity:.999999999;
+}
+h3 {
+ font-size:50px;
+ opacity:10;
 }
 .headerDiv > img
 {
@@ -28,15 +37,13 @@ background-color:black;
   height:300px ;
   border-radius:50%;
   border:2px solid black ;
-  box-shadow:7px 2px 2px #272121;
+  box-shadow:0px 0px 15px #FFFFFF,0px 0px 15px #C9C9C9,0px 0px 15px #7A7A7A ;
+   opacity:10;
 }
 .buttonDiv
 {
- width:50%;
- background-color:#232323 ;
  padding:10px ;
  position:relative;
- border:2px solid #232323 ;
 }
 .buttonDiv button
 {
@@ -89,11 +96,12 @@ button:hover
 {
  border-radius:50% 50%;
  background-color:yellow;
- border-color:#53FCFC;
+ border:3px groove ;
+ border-color:#A09B00;
  transform:rotate(0deg) scale(1.5,1) ;
  font-style:italic;
- box-shadow:0px 5px 15px #00BFF9,0px 5px 15px #00A5FF,0px 5px 15px #006D8C ;
- text-shadow: 0px 5px 15px #00BFF9,0px 5px 15px #00A5FF,0px 5px 15px #006D8C ;
+ box-shadow:0px 0px 15px #FFEE00,0px 0px 15px #C5FF26,0px 0px 15px #F2FF00 ;
+ text-shadow: 0px 0px 10px #2D2D2D,0px 0px 10px #000000,0px 0px 10px #231C1C ;
 }
 a
 {

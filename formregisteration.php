@@ -104,19 +104,19 @@
 		<p>Hello There, I Am 505a Robot.</p> <!-- لعبت هنا  -->
 		<hr>
         <div class="form-group">
-        	<input type="text" class="form-control" name="name" placeholder="Name" required="required">
+        	<input type="text" class="form-control" name="name" placeholder="Name" required="required" autocomplete="off" autofocus>
         </div>
         <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email Address" required="require">
+        	<input type="email" class="form-control" name="email" placeholder="Email Address" required="require" autocomplete="off">
         </div>
 				<div class="form-group">
-        	<input type="tel" class="form-control" name="phone" placeholder="Phone" maxlength="11">
+        	<input type="tel" class="form-control" name="phone" placeholder="Phone" maxlength="11" autocomplete="off">
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" id = "password" name="password" placeholder="Password" required="required">
+            <input type="password" class="form-control" id = "password" name="password" placeholder="Password" required="required" autocomplete="off">
         </div>
 		<div class="form-group">
-            <input type="password" class="form-control" id = "confirm_password" name="confirm_password" placeholder="Confirm Password" required="required">
+            <input type="password" class="form-control" id = "confirm_password" name="confirm_password" placeholder="Confirm Password" required="required" autocomplete="off">
         </div>
 		<div class="form-group">
             <button type="submit" class="btn btn-primary btn-block btn-lg" name="submit" onclick="validatePassword();">Sign Up</button>
