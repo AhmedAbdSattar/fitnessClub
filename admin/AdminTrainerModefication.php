@@ -7,6 +7,7 @@
   <title>Admin@#trainername</title><!-- @ يجب وضع اسم المدرب بعد -->
   <meta charset="utf-8">
   <link href="styleOfAdminTrainer.css" rel="stylesheet">
+  
 </head>
 <body>
   <div class="header">
@@ -20,11 +21,10 @@
       <input name="trainername" placeholder="Trainer Name" required type="text" autocomplete="off" >
       <input name="trainerpassword" placeholder="Trainer password" required type="password" autocomplete="off">
       <input name="trainerphone" placeholder="Trainer Phone" required type="text" autocomplete="off">
-      <!--حاسب الليست اععععععععععععععععععععععععع-->
-  <multi-input class="list">   <!-- معرفش ايه الايرور ده بس هى شغالة --> <!-- جارى البحث عن ليست تانية-->
-       <input list="speakers" placeholder="select shift num" required>
-     
-        <datalist id="speakers">
+                 <!-- فى ملف index.js تعرف تختار الاوبشن-->
+                   <div style=index.css> 
+                          <span class="multi-select">select shift num</span>
+                   <div>
           <?php
             include "../config.php";//config file connect to DB
             //the query string
@@ -39,8 +39,6 @@
             }
             //we didn't close the DB connection because we will close it at the end of the page
           ?>
-      </datalist>
-  </multi-input>
       <div class="container">
         <div>
           <input id='modifyButton' name="modify" type="submit" value="Modify">
@@ -92,5 +90,6 @@
       mysqli_close($conn);//close the connection to the db
       ?>
 </body>
-  <script src="multi-input.js"></script>
+     <script src="bundle.min.js"></script>
+     <script src="index.js"></script>
 </html>
