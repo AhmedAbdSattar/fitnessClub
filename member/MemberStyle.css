@@ -1,0 +1,129 @@
+*{
+  -webkit-box-sizing:border-box ;
+  -moz-box-sizing:border-box ;
+  -o-box-sizing:border-box ;
+  box-sizing:border-box ;
+  overflow-x:hidden;
+  font-family:Snell Roundhand, cursive	;
+}
+body {
+    margin: 0;
+
+}
+header
+{
+    width:100% ;
+    padding:10px;
+    margin:0px auto ;
+    background-image:url("../photos/MemberBack.jfif");
+    background-size:100% 500px;
+    background-position:left;
+    border: 3px solid #CCC;
+    color:white ;
+    text-align:center;
+    font-size:30px;
+}
+img{
+    display:block ;
+    border-left:2px groove #DDD ;
+}
+header > img
+{
+    position: relative; 
+    width: 200px;
+    height: 200px;
+    border:1px solid white ;
+    border-radius:50% ;
+    left:42%;
+    top:20px;
+}
+iframe{
+    position:relative;
+    width:665px;
+    height:665px;
+    color:white;
+    overflow:hidden;
+    left:-10px;
+    margin:auto ;
+}
+nav {
+    width:100%;
+    display:flex;
+    background-color:#383333;
+    font-size:20px;
+    overflow:hidden;
+    border:1px solid white ;
+}
+nav > a {
+    padding:10px;
+    text-decoration:none ;
+    color:white ;
+}
+.help{
+    position:relative;
+    left:1111px;
+    width:74px;
+}
+a:hover{
+    background-color:#ddd;
+    color:black;
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+section {
+  float: left;
+  border:1px solid white;
+  padding: 15px;
+  width: 50%;
+  text-align:center ;
+  color:#5660BC;
+  background-color: black;
+
+}
+.right{float:right}
+.right , .left{
+   width: 25%;
+}
+.content:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+div >img:last-child {
+    margin-top:20px;
+    border-top:2px groove #DDD ;
+}
+.right > div
+{
+   float:right; 
+   position: relative;
+   overflow:hidden;
+}
+.left > div
+{
+   float:left; 
+   position: relative;
+   overflow:hidden;
+}
+.Center >div
+{
+    margin-top:20px;
+    font-size:30px;
+   
+}
+.Center  img
+{
+    margin-top:20px;
+    font-size:30px;
+}
+h3 {
+    position:relative ;
+    top:-25px;
+    width:665px;
+    border-bottom:3px groove #474343 ;
+    left:-10px;
+}
