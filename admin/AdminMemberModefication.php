@@ -20,7 +20,7 @@
       <input name="username" id = 'username' placeholder="Member Email" required type="email" autocomplete="off"/>
       <input name="memberphone" id = 'memberPhone' placeholder="Member Phone" required type="tel" maxlength="11" autocomplete="off"/> <!-- adimn can`t modification-->
       <input name="password" id = 'password' placeholder="Member Password" required type="password" autocomplete="off"/>
-      <select id = 'packageList' name = 'package'>
+    <select id = 'packageList' name = 'package'>
         <?php
           include "../config.php";//config file connect to DB
           //the query string
@@ -36,7 +36,6 @@
           //we didn't close the connection to DB because we will use it again
         ?>
       </select>
-
     <div class="container">
         <!-- dont forget form action-->
         <div>
