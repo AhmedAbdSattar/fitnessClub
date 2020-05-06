@@ -23,7 +23,7 @@
      </header>
      <nav>
       <a href="../login.php">Logout</a> <!--should log out-->
-      <a href="#">Account</a> <!--should go to account setting page-->
+      <a href="">Account</a> <!--should go to account setting page-->
       <a href="" class ="help">help</a>  <!--should go to help page-->
      </nav>
   <div class="content"> <!-- Start content-->
