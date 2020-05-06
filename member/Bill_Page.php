@@ -5,7 +5,7 @@
        <link rel="stylesheet" href="Bill_Style.css">
        <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
 
-       <title> #Member Name @M3lsh_FC</title> <!-- member name here please developer :)-->
+       <title> Pay Page</title> <!-- member name here please developer :)-->
     </head>
 <body>
                                           <!-- الافتتاحية-->
