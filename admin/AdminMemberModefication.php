@@ -90,7 +90,7 @@
   </table>
 
   <?php
-    if(isset($_GET['username'])){//when enter the page from member_management page
+    if(isset($_GET['username'])){//when enter the page of a member
       //we didn't connect to DB because we already connected on line 38
       $username = $_GET['username'];
       //the query string
@@ -180,34 +180,8 @@
                       $sql = "INSERT INTO billpackage (packageName, bill_ID)
                           VALUES ('$package', $billID);";
                       if ($conn->query($sql) === TRUE) {//execute the query
-                        echo "<script>";
-                        //change page title
-                        echo "document.title = 'Admin@$memberName';";
-                        //disable the username bacuase it is not editable
-                        echo "document.getElementById('username').readOnly = true;";
-                        //show the value of the username
-                        echo "document.getElementById('username').value = '$username';";
-                        //show the value of the name on the header
-                        echo "document.getElementById('memberH1').innerHTML = '$memberName';";
-                        //show the value of the name on the textbox
-                        echo "document.getElementById('membername').value = '$memberName';";
-                        //show the value of the phoneNumber
-                        echo "document.getElementById('memberPhone').value = '$phoneNumber';";
-                        //change image source
-                        echo "document.getElementById('memberImage').src = '$image';";
-                        //select the package
-                        echo "document.getElementById('packageList').value = '$package';";
-                        //tell the user that he can't change password
-                        echo "document.getElementById('password').placeholder = 'Password can not be changed';";
-                        //disable the password
-                        echo "document.getElementById('password').disabled = true;";
-                        //make the password not required
-                        echo "document.getElementById('password').required = false;";
-                        //disable add button
-                        echo "document.getElementById('addButton').disabled = 'disabled';";
-                        echo "</script>";
-                        //inform the user that the member Added Successfully
-                        echo "<script>alert('Added Successfully');</script>";
+                        echo "<script>alert('Added Successfully');</script>";//inform the user that added Successfully
+                        echo "<script>location.reload();</script>";//refresh the page to show the added data
                       }
                     }
                   }
