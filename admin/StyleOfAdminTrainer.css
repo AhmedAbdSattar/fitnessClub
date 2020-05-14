@@ -176,9 +176,15 @@ body {
                 0px 0px  80px #3e0418;
     }
 
-    #selectCountry  input , #selectCountry  select {
-    margin: 2px 2px;
-    width: 50px;
-    height: 20px;
+   input[type="CheckBox"] {
+   width: 200px;
+   height: 20px;
+   margin-left:20px;
+}
+    
+
+    .selectCountery label {
+    width: 20px;
+    height: 10px;
     font-size: 10px;
     }
