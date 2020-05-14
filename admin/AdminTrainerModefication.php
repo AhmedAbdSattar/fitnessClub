@@ -6,9 +6,14 @@
 <head>
   <title>Admin@#trainername</title><!-- @ يجب وضع اسم المدرب بعد -->
   <meta charset="utf-8">
-  <link href="styleOfAdminTrainer.css" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.12/css/bootstrap-multiselect.css" type="text/css">
+  <link href="styleOfAdminTrainerV2.css" rel="stylesheet">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.12/js/bootstrap-multiselect.js"></script>
 </head>
 <body>
   <div class="header">
@@ -23,9 +28,21 @@
       <input name="trainerpassword" id = "trainerpassword" placeholder="Trainer password" required type="password" autocomplete="off">
       <input name="trainerphone" id = "trainerphone" placeholder="Trainer Phone" required type="tel" maxlength="11" autocomplete="off">
                  <!-- فى ملف index.js تعرف تختار الاوبشن-->
-                   <div style=index.css>
-                          <span class="multi-select">select shift num</span>
-                   <div>
+                 
+        <select id='selectCountery' multiple = "multiple">
+          <option>egypt</option>
+          <option>us</option>
+          <option>uk</option>
+          <option>uae</option>
+        </select>
+                    
+      <script type="text/javascript">
+        $(function(){
+          $('#selectCountery').multiselect({
+            includeSelectAllOption: true
+          });
+        });
+      </script>
           <?php
             include "../config.php";//config file connect to DB
             //the query string
@@ -101,7 +118,7 @@
               echo "document.getElementById('trainerpassword').required = false;";
               //disable add button
               echo "document.getElementById('addButton').disabled = 'disabled';";
-
+/*
               //select from the list
               echo "var multi =label: 'New York', new SelectPure('.multi-select', {";
               echo "options: [";
@@ -129,6 +146,7 @@
                   }
                 });';
               echo "</script>";
+              */
             }else{
               echo "<script>alert('Error with DB');</script>";//error message
             }
@@ -156,6 +174,5 @@
       mysqli_close($conn);//close the connection to the db
       ?>
 </body>
-     <script src="bundle.min.js"></script>
-     <script src="index.js"></script>
+   
 </html>
