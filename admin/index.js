@@ -1,5 +1,3 @@
-
-      
-      var resetMulti = function() {
-        multi.reset();
-      };
+var resetMulti = function() {
+  multi.reset();
+};

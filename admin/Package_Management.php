@@ -34,7 +34,7 @@
         $packageName = $result['packageName'];
         $discount = $result['discount'];
         $shiftCost = $result['shiftCost'];
-        $totalCost = ($discount/100) * $shiftCost;
+        $totalCost = $shiftCost - (($discount/100)*$shiftCost);
         include 'packageCard.php';//print the package
       }
     }
@@ -44,7 +44,7 @@
 
   <script>
     document.getElementById('add').onclick = function() {
-     location.href = "AdminPackageModification.html";
+     location.href = "AdminPackageModification.php";
     };
   </script>
 </body>

@@ -1,5 +1,5 @@
 <div class = " container">
-  <a href = "https://www.facebook.com"><!--  VIP: here we should put link of package management page which admin add and delete from it-->
+  <a href = <?php echo "'AdminPackageModification.php?packagename=$packageName'";?>><!--  VIP: here we should put link of package management page which admin add and delete from it-->
     <div class ="front">
       <h2><?php echo $packageName;?></h2>
       <h3><?php echo $totalCost;?> $</h3>
