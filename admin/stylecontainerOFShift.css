@@ -7,11 +7,73 @@
 }
 body{
     background-image:url("../photos/shift.jpg");
-    background-position:center center ;
     background-repeat:no-repeat ;
     background-size:cover;
 }
 
+.header {
+    background: #34933a;
+    color:#fff;
+    width: 100%;
+    height: 150px ;
+    position: relative;
+    border:inset 3px black ;
+    padding:20px;
+    display:flex;
+}
+
+
+.header  h1 {
+    position:relative;
+    font-size:50px;
+    font-family:cursive,Arial;
+    text-align:center;
+    margin :auto ;
+    left:10px ;
+    animation: fill 5s ease-in-out infinite .3s alternate ;
+}
+@keyframes fill {
+    0% {
+        transform: translate(0px);
+        text-shadow:3px 4px 3px black ;
+       
+    }
+      50% {
+        transform: translate(200px);
+        color:#630b29;
+        text-shadow:3px 4px 3px white ;
+    }
+    100%
+     {
+        transform: translate(-200px);
+         top:15%;
+         text-shadow:3px 4px 3px black ;
+     }
+}
+@keyframes backgroundBody
+{
+    0%{
+        background-color: #e6f1ff;
+    }
+      10%{
+        background-color:#cce4ff ;
+    }
+      20%{
+        background-color: #b3d6ff;
+    }
+      30%{
+        background-color:#99c9ff ;
+    }
+      40%{
+        background-color: #4da0ff;
+    }
+      50%{
+        background-color: #1a85ff;
+    }  60%{
+        background-color:#005fcc ;
+    }
+    
+}
 input[type="submit"]{
     position:relative;
     font-size:20px;
@@ -24,49 +86,15 @@ input[type="submit"]{
     color: white;
     border:2px solid white ;
     border-radius: 10px  ;
-    left:590px;
+    left:10px;
 }
- input[name="filter"]{
-    font-size:20px;
-    border:2px solid white ;
-    width:400px;
-    margin-left: 20px;
-    padding: 5px ;
-    border-radius:0px 10px 10px 0px ;
-    background-color:black;
-    color: white;
-}
-table {
-    margin:10px auto;
-    color:white;
-    width:1300px;
-    font-size:20px;
-    border-collapse:collapse;
-    border:2px solid #262323;
-}
-tr {
-    text-align:left;
-}
-
-th  {
-    background-color:#009600 ;
-    position:relative;
-    padding:20px;
-    color:black 
-}
-tr:nth-child(even){background-color: #545050 }
-tr:nth-child(odd){background-color: #3D3A3A}
-tr:hover {background-color: #999595 ; color:black}
-td{
-    padding:20px;  
-}
-/* ليس لها قيمة الان */
-tr:focus , input:focus{
+input:focus{
     background-color:aqua;
     box-shadow:0px 0px 10px #00E2E2 ,0px 0px 10px #1FC4C4 ,0px 0px 10px #00A0A0 ;
     color:black;
 }
 form > input {
+    text-align: left;
     display:block;
     font-size:20px;
     border:2px solid white ;
@@ -76,14 +104,39 @@ form > input {
     border-radius:0px 10px 10px 0px ;
     background-color:black;
     color: white;
-    margin: auto  ;
+    margin: 10px  ;
     margin-bottom:10px;
     
 }
-label{
+.time{
     position:relative ;
     color:white;
     font-size: 30px;
-    left:420px;
+    left:10px;
     margin-bottom:10px;
 }
+  input[type="CheckBox"] {
+   width: 320px;
+   height: 20px;
+   margin-left:20px;
+}
+  .selectCountery label {
+  width: 20px;
+  height: 10px;
+  font-size: 20px;
+  color:black ;
+ }
+ .multiselect-container {
+  color:black;
+ }
+ fieldset {
+  border:2px solid white ;
+  background:#34933a ;
+  width:50%;
+  margin-left:20px;
+  border-radius:50% 10%;
+ }
+ legend {
+  color:#FFF ;
+  font-weight:bold ;
+ }

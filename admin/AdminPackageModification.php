@@ -171,7 +171,7 @@
 			</select>
 			<script type="text/javascript">
 			     $(function(){
-			       $('#selectCountery').multiselect({
+			       $('#selectShift').multiselect({
 			         includeSelectAllOption: true
 			       });
 			     });
