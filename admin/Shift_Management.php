@@ -25,7 +25,15 @@
   <form id="shift">
         <!--  data of shifts-->
        <input type="text" class="Shift num" placeholder="Shift Number " required>
-       <input type="text" class="Day" placeholder="DAY">
+       <select  id="day" class="Day" required>
+        <option value="Saturday"> Saturday</option>
+        <option value="Sunday"> Sunday</option>
+        <option value="Monday"> Monday</option>
+        <option value="Tuesday"> Tuesday</option>
+        <option value="Wednesday"> Wednesday</option>
+        <option value="Thursday"> Thursday</option>
+        <option value="Friday"> Friday</option>
+       </select>
        <label class ="time" for="start time"> Start time</label>
        <input type="time" class="start" >
        <label class ="time" for="end time"> End time</label>

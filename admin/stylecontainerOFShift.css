@@ -93,7 +93,7 @@ input:focus{
     box-shadow:0px 0px 10px #00E2E2 ,0px 0px 10px #1FC4C4 ,0px 0px 10px #00A0A0 ;
     color:black;
 }
-form > input {
+form > input ,.Day{
     text-align: left;
     display:block;
     font-size:20px;

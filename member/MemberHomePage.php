@@ -35,7 +35,8 @@
       </div>
      </section>              <!-- End left-->
      
-     
+     <?php  include "../footer/footer.php" ?>
+
      
      <section class="Center"> <!-- Start Center-->
        <h1>
@@ -84,7 +85,6 @@
      
  
   </div>  <!-- End content-->
-      
+    
     </body>
-
 </html>
