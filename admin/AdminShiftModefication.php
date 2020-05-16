@@ -45,6 +45,22 @@
         <input type="submit" name="delete" id="delete" value="DELETE" form="shift">
         <input type="submit" name="update" id="update" value="UPDATE" form="shift">
     </form>
+  
+  
+    <div class="Word">Trainer List </div> <!--as Span :)-->
+    <div class="TrainerList">
+     <!--here you can play :)-->
+     <?php for ($i=0;$i<50;$i++){?>
+     <a href="TrainerShift.php"> <!--here we will take link of page-->
+     <div class="list">
+     <label for="Name"> @trainer name</label> <!-- should bring Trainers that in this shift-->
+     </div>
+     <a>
+    <?php }?>
+     <!--end play-->
+    </div>
+    
+    
     <?php
       if(isset($_GET['delete'])){
         $shiftNum = $_GET['shiftnumber'];

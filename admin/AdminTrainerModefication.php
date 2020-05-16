@@ -27,7 +27,8 @@
       <input name="trainername" id = "trainername" placeholder="Trainer Name" required type="text" autocomplete="off" >
       <input name="trainerpassword" id = "trainerpassword" placeholder="Trainer password" required type="password" autocomplete="off">
       <input name="trainerphone" id = "trainerphone" placeholder="Trainer Phone" required type="tel" maxlength="11" autocomplete="off">
-                 <!-- فى ملف index.js تعرف تختار الاوبشن-->
+      <!--new one-->
+      <input name="total time of works" type="text" id="timeWork" placeholder="Total time of work in all shifts" readonly> <!-- here place for read total work if you want admin can to modify on it remove read only-->                                         
 
         <select id='selectShift' name = 'selectShift[]' multiple = "multiple" required>
           <?php

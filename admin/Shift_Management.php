@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Package Management </title>
+<title> Shift Management </title>
 
 </head>
-<link rel="stylesheet" href="stylecontainerOFPackage.css">
+<link rel="stylesheet" href="styleShiftManagement.css">
 
 <body>
   <?php
@@ -48,6 +48,7 @@
      location.href = "AdminShiftModefication.php";
     };
   </script>
+  
   </body>
 
   </html>
