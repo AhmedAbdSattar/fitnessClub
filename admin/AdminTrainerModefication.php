@@ -28,7 +28,7 @@
       <input name="trainerpassword" id = "trainerpassword" placeholder="Trainer password" required type="password" autocomplete="off">
       <input name="trainerphone" id = "trainerphone" placeholder="Trainer Phone" required type="tel" maxlength="11" autocomplete="off">
       <!--new one-->
-      <input name="total time of works" type="text" id="timeWork" placeholder="Total time of work in all shifts" readonly> <!-- here place for read total work if you want admin can to modify on it remove read only-->                                         
+      <input name="totalworks" type="number" id="totalworks" placeholder="Total time of work in all shifts" readonly> <!-- here place for read total work if you want admin can to modify on it remove read only-->
 
         <select id='selectShift' name = 'selectShift[]' multiple = "multiple" required>
           <?php
@@ -88,8 +88,9 @@
             if(isset($_GET['username'])){//when enter the page from member_management page or click on a Button
               $username = $_GET['username'];//the trainer userName
               //the query string to get the trainer data
-              $sql = "SELECT name, phoneNumber, image FROM person
-                WHERE person.username = '$username';";
+              $sql = "SELECT name, phoneNumber, image, SUM(trainershift.HoursNum)
+                FROM person JOIN trainershift ON person.username = '$username'
+                AND trainershift.trainerID = person.username;";
               //execute the query
               $stmt = $conn->query($sql);
               if ($stmt->num_rows == 1) {//if there is only one user of that data
@@ -97,6 +98,7 @@
                   $trainerName = ucwords($result["name"]);
                   $phoneNumber = $result['phoneNumber'];
                   $image = constant('personeImage'). $result["image"];//assign the image path
+                  $hoursNum = $result['SUM(trainershift.HoursNum)'];
                   //the query string to get the trainer shift
                   $sql = "SELECT shiftNum FROM trainershift WHERE trainerID = '$username';";
                   //execute the query
@@ -127,6 +129,7 @@
                     //make the password not required
                     echo "document.getElementById('trainerpassword').required = false;";
                     echo "</script>";
+                    echo "<script>document.getElementById('totalworks').value = $hoursNum;</script>";
                   }else{
                     echo "<script>alert('Error with DB');</script>";//error message
                   }

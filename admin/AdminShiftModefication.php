@@ -45,22 +45,35 @@
         <input type="submit" name="delete" id="delete" value="DELETE" form="shift">
         <input type="submit" name="update" id="update" value="UPDATE" form="shift">
     </form>
-  
-  
-    <div class="Word">Trainer List </div> <!--as Span :)-->
+
+
+    <div class="Word">Trainer List</div> <!--as Span :)-->
     <div class="TrainerList">
      <!--here you can play :)-->
-     <?php for ($i=0;$i<50;$i++){?>
-     <a href="TrainerShift.php"> <!--here we will take link of page-->
-     <div class="list">
-     <label for="Name"> @trainer name</label> <!-- should bring Trainers that in this shift-->
-     </div>
-     <a>
-    <?php }?>
+     <?php
+     if (isset($_GET['shiftnumber'])) {
+       $shiftNum = $_GET['shiftnumber'];
+       //the query string
+       $sql = "SELECT trainerID FROM trainershift WHERE shiftNum = '$shiftNum';";
+       $stmt = $conn->query($sql);//execute the query
+       if ($stmt->num_rows >= 1) {//if there is a user of that data
+         //output the data
+         while($result = $stmt->fetch_assoc()) {//$result["something"] is the result of the query
+           $trainerID = $result["trainerID"];
+           ?>
+           <a href="<?php echo 'TrainerShift.php?shiftnumber='.$shiftNum.'&trainerID='.$trainerID;?>"> <!--here we will take link of page-->
+             <div class="list">
+             <label for="Name"><?php echo $trainerID;?></label> <!-- should bring Trainers that in this shift-->
+             </div>
+           </a>
+     <?php
+         }
+       }
+     }?>
      <!--end play-->
     </div>
-    
-    
+
+
     <?php
       if(isset($_GET['delete'])){
         $shiftNum = $_GET['shiftnumber'];
@@ -153,6 +166,8 @@
             echo "document.getElementById('day').selectedIndex = $shiftDay;";
             //show the value of the maxMember
             echo "document.getElementById('maxMember').value = $maxMember;";
+            //disable add button
+            echo "document.getElementById('add').disabled = 'disabled';";
             echo "</script>";
           }
         }else{
