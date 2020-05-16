@@ -146,14 +146,14 @@
         //execute the query
         $stmt = $conn->query($sql);
         if($stmt->num_rows >= 1) {//if there is a user of that data
-          echo "<script>alert('that email is already exists');</script>";//error message
+          echo "<script>alert('that email is already exist');</script>";//error message
         }else {
           //the query string
           $sql = "SELECT phoneNumber FROM person WHERE phoneNumber = '$phoneNumber'";
           //execute the query
           $stmt = $conn->query($sql);
           if($stmt->num_rows >= 1) {//if there is a user of that data
-            echo "<script>alert('that phone number is already exists');</script>";//error message
+            echo "<script>alert('that phone number is already exist');</script>";//error message
           }else{
             //the query string
             $sql = "INSERT INTO person (name, username, password, phoneNumber)
