@@ -66,7 +66,7 @@ nav > a {
     left:1111px;
     width:74px;
 }
-a:hover{
+nav a:hover{
     background-color:#ddd;
     color:black;
 }
@@ -132,75 +132,41 @@ h3 {
 }
 
 .MemberSelections {
-    text-align:left;
     margin-bottom:20px;
     color:white ;
     padding:5px ;
     width:100%;
-    height:auto ;
+    height:400px;
 }
-.select {
-    display:block ;
-    width:100% ;
-    padding:1px;
-    height:55px;
-    margin-top:25px;
+.MemberSelections  div  {
+    display:inline-block;
+    width:210px ;
+    height:210px;
+    margin-top:50px;
     font-size:30px;
-    color:#595959;
-    border-bottom:2px solid #08FF00 ;
-    border-top:2px solid #00FF08 ;
-    border-radius:0px 10px 10px 0px ;
-    z-index:55;
-    text-align:left;
-}
-.select > a {
- color:white ;
- position:relative ;
- text-decoration:none ;
-}
-a:hover  {
-    color:#0C0B0B;
-    text-shadow: 0px 0px 1px #383EFF ,0px 0px 1px #0029F9 ,0px 0px 1px #0000BC,0px 0px 1px #000375 ,0px 0px 1px #000E56 ,0px 0px 1px #1C1CFF ;
-}
-a >div {
- padding-bottom:12px;
-}
-input{
-    position:relative;
-    background-color:#07FF07 ;
-    left:30%;
-    width:40% ;
-    height:50px;
-    margin-top:20px;
-    font-size:30px;
-    border:3px groove #637500;
-    color:#3F3B00;
-    text-shadow:0px 0px 10px #D8FF00 ,0px 0px 10px #F9FF4C ,0px 0px 10px #EFFF87 ;
-    z-index:1;
     
+    color:#FFFFFF;
+    background: #009300 ;
+    border:2px groove #005E07 ;
+    
+    border-radius:50% 50% ;
+    z-index:55;
+    font-weight:bold ;
+    margin-left: 30px;
+    box-shadow:0px 0px 10px #E9FF00 ,0px 0px 10px #B1C900 ,0px 0px 10px #E6FF2B ;
+    text-shadow:0px 0px 10px #E9FF00 ,0px 0px 10px #B1C900 ,0px 0px 10px #E6FF2B ;
+
 }
-input:hover {
-    background:#0090FF;
-    border-color:#007FFF;
-    box-shadow:0px 0px 10px #02FFE5 ,0px 0px 10px #4CFFF9 ,0px 0px 10px #02E1FF ;
-    color:silver;
-    text-shadow: 0px 0px 1px #111111 ,0px 0px 1px #4C4C4C ,0px 0px 1px #7A7A7A ;
-}
-.pay{
-    width:70% ;
-    margin-left:15%;
-    text-align:center;
-    background:pink ;
-    padding:10px;
-    margin-top:10px;
-    border:2px solid #F94D6A ;
+a{
+ text-decoration: none ;
 }
 
-.pay:hover{
-    background:#FF00EE;
-    border-color:#6B006B;
-    box-shadow:0px 0px 10px #FF00D4 ,0px 0px 10px #FF7FF6 ,0px 0px 10px #FFBCF2 ;
-    color:black;
+
+.MemberSelections  div:hover{
+    background:#FF0050;
+    border-color:#7C0008;
+    box-shadow:0px 0px 10px #FF6363 ,0px 0px 10px #D60E36 ,0px 0px 10px red ;
+    color:silver;
     text-shadow: 0px 0px 10px #141414 ,0px 0px 10px #0C0C0C ,0px 0px 10px #3D3D3D ;
 }
 h2{

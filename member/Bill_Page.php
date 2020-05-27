@@ -15,7 +15,7 @@
                 <span class ="word">* List Of bills * </span>
                 
                 <div class="BillList">
-                    <a href="BillDetails.html">
+                    <a href="BillDetails.php">
                         <div class="list">
                                 <label for="Name">bill id :</label>
                                                              <!--here from db bring bill id-->

@@ -1,0 +1,121 @@
+*{
+  -webkit-box-sizing:border-box ;
+  -moz-box-sizing:border-box ;
+  -o-box-sizing:border-box ;
+  box-sizing:border-box ;
+}
+body{
+  background-image:url("../photos/back3.jpg");
+  background-position:center ;
+  background-size:cover;
+  text-align:center ;
+}
+ table {
+  text-align:center ;
+  border-collapse:collapse ;
+  padding:20px ;
+  margin: 20px auto ;
+  font-size:20px ;
+  color:black ;
+  border:groove 2px black;
+  text-shadow:none ;
+
+}
+th{
+  position:relative;
+  background-color:#FF8307;
+   padding:20px ;
+}
+td{
+  position:relative;
+  background-color:#FF0043 ;
+  padding:20px;
+  border-left: 1px solid black;
+}
+h1 {
+    font-size:40px;
+    color :orange;
+    padding :10px;
+    text-shadow:0px 0px 5px #FFFFFF ,0px 0px 5px #C9C1C1 ,0px 0px 5px #776B6B ;
+}
+input {
+ width:300px;
+ height: 50px;
+ font-size:20px;
+ border: 2px groove #D10411 ;
+ background: red ;
+}
+input:hover{
+ background: green;
+ border-color:#033D03;
+ box-shadow:0px 0px 5px #05FC15 ,0px 0px 5px #097200 ,0px 0px 5px #003D01 ;
+ color:white;
+}
+.packageDetails{
+ position: relative ;
+}
+
+.container1 {
+ position:absolute;
+ left:700px;
+ top:33px;
+ width:500px;
+ height:100px;
+ display:block;
+ position:relative;
+ text-align:center;
+ overflow-y:scroll;
+ overflow-x:hidden;
+}
+.container2 {
+ position:absolute;
+ left:100px;
+ top:-64px;
+ width:500px;
+ height:100px;
+ display:block;
+ position:relative;
+ text-align:center;
+ overflow-y:scroll;
+ overflow-x:hidden;
+}
+.list ,.list1{
+ width:100%;
+ background-color:#C61948;;
+ border:2px solid black ;
+ padding:5px;
+ font-size:20px;
+ color: white ;
+ position:relative;
+ display:block;
+ text-align:center;
+ text-shadow:0px 0px 10px #003303,0px 0px 10px #047C0A,0px 0px 10px #00A508;
+}
+.word1 {
+
+ position: absolute;
+ left:800px;
+ width:300px;
+ padding:5px;
+ color:black;
+ background-color:#7F007B ;
+ text-align:center;
+ font-size:20px;
+ border-radius:50% 50% 0% 0% ;
+}
+.word2 {
+
+ position: absolute;
+ left:200px;
+ top:11px;
+ width:300px;
+ padding:5px;
+ color:black;
+ background-color:#7F007B ;
+ text-align:center;
+ font-size:20px;
+ border-radius:50% 50% 0% 0% ;
+}
+.list1  span{
+ margin-left: 15px;
+}

@@ -43,15 +43,8 @@
       <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F111113043777616%2Fvideos%2F187568902521077%2F&show_text=0&width=476"  scrolling="no"  allowTransparency="true" allowFullScreen="true"></iframe>
      
       <div class="MemberSelections"> <!-- Start Options which member will select from them -->
-        <form action="" method="POST">
-          <span>Select Package please:</span>
-           <div class="select">    <!-- start select the package -->
-            <a ="PackageDetails.php">   <div> Package 1 </div> </a> <!-- link of the page of details-->
-           </div> <!-- End select the package -->
-       
-             <input type="submit" name="submit" value="Pay Now" >
-           
-        </form>
+      <a href="Bill_Page.php"> <div> <br><br>Bills </div></a>
+      <a href="SelectPackage_Page.php"> <div> <br><br> Packages </div></a>
       </div>    <!-- End Options which member will select from them -->
       
       
