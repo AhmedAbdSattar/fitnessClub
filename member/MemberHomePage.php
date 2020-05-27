@@ -1,11 +1,8 @@
 <?php
     if(isset($_POST['submit'])){
-      if ((isset($_POST['trainer'])) && (isset($_POST['package']))){
+      
            header('location: Bill_Page.php'); 
-      }else{
-         $message = "Please your trainer and package :)";
-         echo "<script type='text/javascript'>alert('$message');</script>";
-      }
+     
    }
 ?>
 <!doctype html >
@@ -47,20 +44,10 @@
      
       <div class="MemberSelections"> <!-- Start Options which member will select from them -->
         <form action="" method="POST">
-           <select draggable="true" name="package">  <!-- select the Trainer-->
-              <option disabled selected> Select Your Package </option>
-              <option > Package 1 </option>
-              <option > Package 2 </option>
-              <option > Package 3 </option>
-              
-           </select> <!-- End select the Trainer-->
-       
-           <select draggable="true" name="trainer">  <!-- start select the package -->
-             <option disabled selected> Select Your trainer </option>
-             <option > mo </option>
-             <option > salah </option>
-             <option > yansoon </option>
-           </select>    <!-- End select the package -->
+          <span>Select Package please:</span>
+           <div class="select">    <!-- start select the package -->
+            <a ="PackageDetails.php">   <div> Package 1 </div> </a> <!-- link of the page of details-->
+           </div> <!-- End select the package -->
        
              <input type="submit" name="submit" value="Pay Now" >
            
