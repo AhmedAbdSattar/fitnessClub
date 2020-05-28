@@ -24,7 +24,7 @@ create table trainerShift(
 
 create table bill(
 	bill_ID int primary key AUTO_INCREMENT,
-	endOfTheGracePeriod time,
+	endOfTheGracePeriod DATE,
 	paied boolean
 );
 
