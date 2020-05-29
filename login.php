@@ -7,7 +7,8 @@
         exit();
         break;
       case 2:
-        echo "<script> alert('You have trainer permission'); </script>";
+        header("Location: Trainer\index.php");//redirect to trainer home page
+        exit();
         break;
       case 3:
         header("Location: member/MemberHomePage.php");//redirect to member home page
@@ -57,12 +58,12 @@
         $_SESSION['userName'] = $_POST["email"];//assign userName to the session
         $_SESSION['last_login_timestamp'] = time();//store the login time
       }
+      $stmt->close();//close the statement
+      mysqli_close($conn);//close the connection to the db
+      echo "<script>location.reload();</script>";//refresh the page to redirect the user to his page
     } else {
         echo "<script> alert('wrong password or user name'); </script>";//generate error in password or userName error
     }
-    $stmt->close();//close the statement
-    mysqli_close($conn);//close the connection to the db
-    echo "<script>location.reload();</script>";//refresh the page to redirect the user to his page
   }
  ?>
 </body>
