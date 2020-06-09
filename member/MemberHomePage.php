@@ -4,6 +4,9 @@
 <!doctype html >
 <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../admin/MenuBarStyle.css">
        <meta charset="UTF-8">
        <link rel="stylesheet" href="MemberStyle.css">
        <title>Fitness Club</title>  <!-- احضر اسم العميل-->
@@ -14,6 +17,10 @@
       <img src="<?php echo $_SESSION['image'];?>" alt="Member Img">
       <h2><?php echo $_SESSION['name'];?></h2>
      </header>
+     <div class="navbar">
+        <a href=" ..\rest account info\changeE-mail.html">Account</a>
+        <a>Logout</a> <!-- sould make log out-->
+    </div>
   <div class="content"> <!-- Start content-->
 
      <section class="left" > <!-- Start left-->
@@ -22,8 +29,6 @@
            <img src="../photos/VltF.gif" width="300px" height=1000px>
       </div>
      </section>              <!-- End left-->
-
-     <?php  include "../footer/footer.php"; ?>
 
 
      <section class="Center"> <!-- Start Center-->
