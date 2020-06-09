@@ -24,8 +24,8 @@ body{
 .header {
   overflow: hidden;
   background-color: gray;
-  position: fixed;
-  top: 0px;
+  position: relative;
+  top: -10px;
   left: 0px;
   z-index:5;
   height: 50px;

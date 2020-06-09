@@ -100,7 +100,7 @@
 <body>
 <div class="signup-form">
     <form action='<?php echo $_SERVER["PHP_SELF"];?>' method="post">
-		<h2> Admin Sign Up</h2> <!-- لعبت هنا  -->
+		<h2> Clients Sign Up</h2> <!-- لعبت هنا  -->
 		<p>Hello There, I Am 505a Robot.</p> <!-- لعبت هنا  -->
 		<hr>
         <div class="form-group">

@@ -164,7 +164,7 @@
                         $sql = "INSERT INTO trainershift(trainerID, shiftNum)
                           VALUES ('$username', '$value');";
                         if ($conn->query($sql) !== TRUE) {//execute the query
-                          echo "<script>alert('Error with DB');</script>";//error message
+                          echo "<script>alert('Error in DB ');</script>";//error message
                           $flag = false;
                           break;
                         }
