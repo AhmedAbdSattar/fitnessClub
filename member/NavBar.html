@@ -8,9 +8,18 @@
 <body>
 
 <div class="navbar">
-   <a href=" ..\rest account info\changeE-mail.html">Account</a>
-   <a>Logout</a> <!-- sould make log out-->
+   <a href=" ../rest account info/changeE-mail.php">Account</a>
+   <a onclick="logout();">Logout</a> <!-- sould make log out-->
 </div>
 
+<form id="logout" method="post">
+  <input type="hidden" name="log" id='log'>
+</form>
+<script>
+	function logout (){
+		document.getElementById("log").value = "logout";
+		document.getElementById("logout").submit();
+	}
+</script>
 </body>
 </html>

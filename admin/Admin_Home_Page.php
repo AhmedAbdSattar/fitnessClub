@@ -19,7 +19,7 @@
     <img src = "<?php echo $_SESSION['image']; ?>" alt="adminphoto">
     <h3><?php echo $_SESSION['name'];?></h3>
   </div>
-  
+
 
 
          <!-- تم وضع اللينك بنجاح-->
@@ -46,3 +46,4 @@
 </body>
 
 </html>
+<?php include_once "../footer/footer.php"; ?>

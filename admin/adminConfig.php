@@ -4,4 +4,6 @@
     header("Location: ../login.php");//redirect to login page
     exit();
   }
+
+  include_once("menuBar.php");
 ?>

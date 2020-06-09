@@ -48,7 +48,8 @@
      location.href = "AdminShiftModefication.php";
     };
   </script>
-  
+
   </body>
 
   </html>
+<?php include_once "../footer/footer.php"; ?>

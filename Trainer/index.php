@@ -24,7 +24,7 @@
 		<div class="header">
 		  <a onclick="linkFN ('AllMembers')">All Members</a>
 		  <a onclick="linkFN ('logout')">Log out</a>
-		  <a href="..\rest account info\changeE-mail.html"> change password</a>
+		  <a href="../rest account info/changeE-mail.php">change password</a>
 		  <input type="text" placeholder="Search..." name="search" id="search">
 
 		  <select id="shiftsList" onchange="document.getElementById('pageform').submit();" name="shiftsList">
@@ -159,3 +159,4 @@
 		<script src="JS/java.js"></script>
 </body>
 </html>
+<?php include_once "../footer/footer.php"; ?>

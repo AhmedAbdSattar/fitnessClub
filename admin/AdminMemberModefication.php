@@ -267,3 +267,4 @@
 
 </body>
 </html>
+<?php include_once "../footer/footer.php"; ?>

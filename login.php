@@ -47,7 +47,7 @@
     $password = sha1($_POST["pwd"]);//the password is encrypted
 
     include "config.php";//config file connect to DB
-    $sql = "SELECT permission, name, image FROM person WHERE username = '$userName' AND password = '$password';";//the query string
+    $sql = "SELECT phoneNumber, permission, name, image FROM person WHERE username = '$userName' AND password = '$password';";//the query string
     $stmt = $conn->query($sql);//execute the query
     if ($stmt->num_rows == 1) {//if there is only one user of that data
       //output the data
@@ -57,6 +57,7 @@
         $_SESSION['image'] = constant('personeImage'). $result["image"];//assign the image path
         $_SESSION['userName'] = $_POST["email"];//assign userName to the session
         $_SESSION['last_login_timestamp'] = time();//store the login time
+        $_SESSION['phoneNumber'] = $result["phoneNumber"];
       }
       $stmt->close();//close the statement
       mysqli_close($conn);//close the connection to the db
@@ -68,3 +69,4 @@
  ?>
 </body>
 </html>
+<?php include_once "footer/footer.php"; ?>

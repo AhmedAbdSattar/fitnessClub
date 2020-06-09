@@ -204,3 +204,4 @@
 	</fieldset><img class="background" src="../photos/dumbell_curl.GIF">
 </body>
 </html>
+<?php include_once "../footer/footer.php"; ?>

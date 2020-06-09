@@ -17,10 +17,7 @@
       <img src="<?php echo $_SESSION['image'];?>" alt="Member Img">
       <h2><?php echo $_SESSION['name'];?></h2>
      </header>
-     <div class="navbar">
-        <a href=" ..\rest account info\changeE-mail.html">Account</a>
-        <a>Logout</a> <!-- sould make log out-->
-    </div>
+
   <div class="content"> <!-- Start content-->
 
      <section class="left" > <!-- Start left-->
@@ -64,3 +61,4 @@
 
     </body>
 </html>
+<?php include_once "../footer/footer.php"; ?>
