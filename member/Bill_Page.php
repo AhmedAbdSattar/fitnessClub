@@ -8,6 +8,7 @@
 	<meta charset="UTF-8">
 	<link href="Bill_Style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
+
 	<title>Pay Page</title><!-- member name here please developer :)-->
 </head>
 <body>
@@ -29,7 +30,6 @@
       //output the data
       while($result = $stmt->fetch_assoc()) {//$result["something"] is the result of the query
         ?>
-        <div class="BillList">
           <a onclick="linkFN('<?php echo $result['bill_ID'];?>')">
           <div class="list">
             <label for="Name">bill id :</label> <!--here from db bring bill id-->
@@ -38,7 +38,6 @@
              <input disabled type="checkbox" <?php echo ($result ['paied'] == 1) ? "checked": " "; ?>><!-- check box if bill paid or not-->
           </div>
           </a>
-        </div>
         <?php
       }
     }
@@ -57,4 +56,3 @@
 
 </body>
 </html>
-<?php include_once "../footer/footer.php"; ?>

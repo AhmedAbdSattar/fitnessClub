@@ -8,6 +8,7 @@
 
 </head>
 <link rel="stylesheet" href="styleShiftManagement.css">
+<link rel="stylesheet" href="../footer/footerStyle.css">
 
 <body>
   <?php

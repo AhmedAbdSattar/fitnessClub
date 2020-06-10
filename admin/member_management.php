@@ -6,6 +6,8 @@
 <head>
   <title>Members Management</title>
   <link rel="stylesheet" href="stylecontainerOFMember.css">
+  <link rel="stylesheet" href="../footer/footerStyle.css">
+
   </head>
 <body>
 

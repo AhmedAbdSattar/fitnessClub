@@ -8,6 +8,7 @@
 
 </head>
 <link rel="stylesheet" href="stylecontainerOFPackage.css">
+<link rel="stylesheet" href="../footer/footerStyle.css">
 
 <body>
   <?php

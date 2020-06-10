@@ -9,6 +9,8 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.12/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
 	<link href="styleOfAdminpackagepage.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../footer/footerStyle.css">
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
@@ -201,7 +203,7 @@
         echo "</script>";
       }
     ?>
-	</fieldset><img class="background" src="../photos/dumbell_curl.GIF">
+	</fieldset>
 </body>
 </html>
 <?php include_once "../footer/footer.php"; ?>

@@ -7,6 +7,8 @@
   <title>Admin@#membername</title><!-- @ يجب وضع اسم العميل بعد  -->
   <meta charset="utf-8">
   <link href="styleOfAdminMemberpage.css" rel="stylesheet"><!-- AM: admin member-->
+  <link rel="stylesheet" href="../footer/footerStyle.css">
+
 </head>
 <body>
   <div class="header">
@@ -54,40 +56,6 @@
     </form>
   </fieldset>
 
-  <table>
-    <tr>
-      <th>Day</th>
-      <th>attendance</th>
-    </tr>
-    <tr>
-      <td>Saturday</td>
-      <td><input checked disabled form="member" name="check box" type="checkbox"></td>
-    </tr>
-    <tr>
-      <td>Sunday</td>
-      <td><input checked disabled form="member" name="check box" type="checkbox"></td>
-    </tr>
-    <tr>
-      <td>Monday</td>
-      <td><input checked disabled form="member" name="check box" type="checkbox"></td>
-    </tr>
-    <tr>
-      <td>Tuesday</td>
-      <td><input checked disabled form="member" name="check box" type="checkbox"></td>
-    </tr>
-    <tr>
-      <td>Wednesday</td>
-      <td><input checked disabled form="member" name="check box" type="checkbox"></td>
-    </tr>
-    <tr>
-      <td>Thursday</td>
-      <td><input checked disabled form="member" name="check box" type="checkbox"></td>
-    </tr>
-    <tr>
-      <td>Friday</td>
-      <td><input checked disabled form="member" name="check box" type="checkbox"></td>
-    </tr>
-  </table>
 
   <?php
     if(isset($_GET['username'])){//when enter the page of a member

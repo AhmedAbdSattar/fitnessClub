@@ -14,7 +14,6 @@
 	<style type="text/css">
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
@@ -159,4 +158,3 @@
 		<script src="JS/java.js"></script>
 </body>
 </html>
-<?php include_once "../footer/footer.php"; ?>

@@ -7,6 +7,8 @@
 <head>
   <title> trainers Management </title>
   <link rel="stylesheet" href="stylecontainerOFTrainer.css">
+  <link rel="stylesheet" href="../footer/footerStyle.css">
+
 </head>
 
 <body>

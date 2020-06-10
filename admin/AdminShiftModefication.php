@@ -6,6 +6,8 @@
 <head>
 <meta charset utf-8>
  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../footer/footerStyle.css">
+
  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.12/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
 	</script>
@@ -18,6 +20,7 @@
 <link rel="stylesheet" href="stylecontainerOFShift.css">
 </head>
 <body>
+ 
       <div class="header">
         <h1 id='shiftH1'>#Shift NAME</h1>
       </div>

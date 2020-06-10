@@ -142,7 +142,7 @@ form > input ,.Day{
  }
 .TrainerList {
  left:60%;
- top:30%;
+ top:50%;
  width:500px;
  height:500px;
  display:block;
@@ -168,7 +168,7 @@ form > input ,.Day{
  left:68%;
  width:300px;
  padding:5px;
- top:24%;
+ top:45%;
  color:black;
  background-color:green ;
  position:absolute;

@@ -13,5 +13,4 @@
     exit();
   }
 
-  include_once "NavBar.html";
 ?>
